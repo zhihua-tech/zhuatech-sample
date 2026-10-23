@@ -1,0 +1,51 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "PASS",
+      "accountedQty": "#35",
+      "availableQty": "#65"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "tested": "100"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "retentionEnd": "2026-10-22"
+    },
+    "expected": {
+      "decision": "REVIEW"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "received": "0",
+      "tested": "0",
+      "retained": "0",
+      "disposed": "0"
+    },
+    "expected": {
+      "decision": "PASS"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "retained": "0",
+      "retentionEnd": "2026-10-22"
+    },
+    "expected": {
+      "decision": "PASS"
+    },
+    "error": false
+  }
+]
